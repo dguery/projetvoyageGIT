@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AfficherAvisController extends AbstractController {
     /**
-     * @Route("/afficher/avis/{id}")
+     * @Route("/afficher/avis/{id}" , name="afficher_avis")
      */
     public function index($id) {
       $avis = $this->getDoctrine()

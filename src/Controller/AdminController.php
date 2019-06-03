@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 class AdminController extends AbstractController
 {
     /**
-     * @Route("/admin")
+     * @Route("/admin", name="admin")
      */
     public function index(Request $request):Response {
         return $this->render("/admin/index.html.twig");

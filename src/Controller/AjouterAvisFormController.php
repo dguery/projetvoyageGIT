@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 class AjouterAvisFormController extends AbstractController
 {
     /**
-     * @Route("/ajouter/avis/form", name="ajouter_avis_form")
+     * @Route("/ajouter/avis/form", name="ajout_avis_form")
      */
     public function index(Request $request)
     {

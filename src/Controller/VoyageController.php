@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class VoyageController extends AbstractController {
     /**
-     * @Route("/voyage")
+     * @Route("/voyage", name="voyage")
      */
     public function index(Request $request):Response {
         return $this->render("/voyage/index.html.twig",["nom"=>$request->get("nom", "inconnu"), "pays"=>$request->get("pays", "un pays")]);
