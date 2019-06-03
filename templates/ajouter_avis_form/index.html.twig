@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AjouterAvisFormController!{% endblock %}
+
+{% block body %}
+
+<h1>Ajouter un avis sur un établissement</h1>
+<p>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<input type="submit" />
+{{ form_end(form) }}
+</p>
+{% endblock %}

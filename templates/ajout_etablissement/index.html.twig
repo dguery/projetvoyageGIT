@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ajout d'un établissement</title>
+  </head>
+  <body>
+    <h1>Etablissement</h1>
+    <p> Nom : {{ etablissement.nom }}</p>
+    <p> Adresse : {{ etablissement.adresse }}</p>
+    <p> Téléphone : {{ etablissement.tel }}</p>
+    <p> E-mail : {{ etablissement.email }}</p>
+    <h1>Avis</h1>
+    <p> Titre : {{ avis.titre }}</p>
+    <p> Note : {{ avis.note }}</p>
+    <p> Date : {{ avis.date|date('Y-m-d') }}</p>
+    <p> Commentaire : {{ avis.commentaire }}</p>
+    <h1>Membre</h1>
+    <p> Nom : {{ avis.unMembre.nom }}</p>
+    <p> Prenom : {{ avis.unMembre.prenom }}</p>
+    <p> email : {{ avis.unMembre.email }}</p>
+  </body>
+</html>

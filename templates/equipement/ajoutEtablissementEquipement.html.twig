@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ajouter un équipement</title>
+  </head>
+  <body>
+    <h1>Etablissement</h1>
+    <p> {{ etablissement.nom }}</p>
+    <h1>Equipements</h1>
+    {% for equipement in etablissement.lesEquipements %}
+      <li> libelle : {{ equipement.libelle }}</li>
+    {% endfor %}
+  </body>
+</html>
