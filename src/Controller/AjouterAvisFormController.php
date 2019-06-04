@@ -25,7 +25,7 @@ class AjouterAvisFormController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($unavis);
         $entityManager->flush();
-        return new Response('l avis été enrengistré');
+        return $this->redirectToRoute("confirmation_avis");
     }
         return $this->render('ajouter_avis_form/index.html.twig', array( 'form' => $form->createView()));
     }

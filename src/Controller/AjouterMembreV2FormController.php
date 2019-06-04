@@ -25,7 +25,7 @@ class AjouterMembreV2FormController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($unmembre);
         $entityManager->flush();
-        return new Response('le membre a été enrengistré');
+        return $this->redirectToRoute("confirmation_membre");
     }
         return $this->render('ajouter_membre_v2_form/index.html.twig', array( 'form' => $form->createView()));
     }
