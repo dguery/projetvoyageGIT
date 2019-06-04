@@ -10,7 +10,7 @@ class ConfirmationAvisController extends AbstractController
     /**
      * @Route("/confirmation/avis", name="confirmation_avis")
      */
-    public function index()wtf
+    public function index()
     {
         return $this->render('confirmation_avis/index.html.twig', [
             'controller_name' => 'ConfirmationAvisController',
