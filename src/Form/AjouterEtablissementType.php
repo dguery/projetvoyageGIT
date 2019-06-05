@@ -14,7 +14,7 @@ class AjouterEtablissementType extends AbstractType
         $builder
             ->add('nom')
             ->add('adresse')
-            ->add('telephone')
+            ->add('tel')
             ->add('email')
         ;
     }
