@@ -9,7 +9,7 @@ use App\Form\AjouterEtablissementType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class AjouterEtablissementForm extends AbstractController
+class AjouterEtablissementFormController extends AbstractController
 {
     /**
      * @Route("/ajouter/etablissement/form", name="ajouter_etablissement_form")
