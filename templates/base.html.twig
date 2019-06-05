@@ -40,6 +40,9 @@
                         <a class="nav-link" href="{{ path('ajout_etablissement_form') }}">Ajouter un etablissement</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ path('ajout_equipement_form') }}">Ajouter un equipement</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ path('admin') }}">Administration</a>
                     </li>
 
@@ -48,7 +51,7 @@
         </div>
     </nav>
 </header>
-
+<br><br>
 <main role="main" class="container main">
     {% block body %}{% endblock %}
 </main>
