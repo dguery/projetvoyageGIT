@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 class AjouterEquipementFormController extends AbstractController
 {
     /**
-     * @Route("/ajouter/equipement/form", name="ajouter_equipement_form")
+     * @Route("/ajouter/equipement/form", name="ajout_equipement_form")
      */
     public function index(Request $request)
     {
