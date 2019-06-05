@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un etablissement - Agence de voyage{% endblock %}
+
+{% block body %}
+<center>
+<h1>Ajouter un nouvel etablissement</h1>
+<p>
+{{ form_start(form) }}
+{{ form_widget(form) }}
+<input type="submit" />
+{{ form_end(form) }}
+</p>
+</center>
+{% endblock %}
